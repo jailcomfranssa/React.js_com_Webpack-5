@@ -5,7 +5,7 @@ export const RepositoryItem = (props) => {
         <li>
             <strong>{props.repository?.name ?? "Default"}</strong>
             <p>{props.repository?.description ?? "Aguardando.."}</p>
-            <a href={props.repository?.link ?? ""}> Acessar repositorio</a>
+            <a href={props.repository?.html_url ?? ""}> Acessar repositorio</a>
         </li>
         
     )

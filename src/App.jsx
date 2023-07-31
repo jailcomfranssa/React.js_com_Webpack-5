@@ -6,8 +6,8 @@ export function App() {
     return (
         <>
             <RespositoryList />
-            <br />
-            <Counter />
+            
+            
         </>
 
     )
