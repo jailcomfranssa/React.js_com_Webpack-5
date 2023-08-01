@@ -3,15 +3,15 @@ import { useState, useEffect } from "react"
 
 import '../styles/repositories.css'
 
-const repository = {
-    name: 'unform',
-    description: 'Forms in React',
-    link:'https://github.com'
+interface Repository {
+    name: String;
+    description: String;
+    html_url: String;
 }
 
 export function RespositoryList() {
 
-    const [ repositories, setRepositories] = useState([])
+    const [ repositories, setRepositories] = useState<Repository[]>([])
 
     useEffect(() =>{
         fetch('https://api.github.com/orgs/rocketseat/repos')
